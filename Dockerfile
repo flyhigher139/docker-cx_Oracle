@@ -23,7 +23,6 @@ RUN apt-get install -y python3 python3-dev python3-pip libaio1 && \
 
 # Application layer
 COPY app/ /home
-
 WORKDIR /home
 
-CMD ["python3", "connection_test.py"]
+CMD ["/bin/bash"]
