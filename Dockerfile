@@ -3,7 +3,7 @@ MAINTAINER Gevin <flyhigher139@gmail.com>
 
 # Oracle Instant Client layer
 COPY instantclient/* /tmp/
-COPY sources.list /etc/apt/sources.list
+# COPY sources.list /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y alien && \
     alien -iv /tmp/oracle-instantclient12.2-basiclite-12.2.0.1.0-1.x86_64.rpm && \
